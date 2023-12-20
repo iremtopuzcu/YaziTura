@@ -15,12 +15,15 @@ flipBtn.addEventListener('click', ()=>{
     //coin animasyonunu geçici olarak kapat
     coin.style.animation ="none";
 
-    if (i === 0) {
-        setTimeout(() => {
+    if(i){
+        //eğer i 1 ise yani yazıysa, 100mlsaniye sonra coine flip-tura animasyonunu uygula
+        setTimeout(()=>{
             coin.style.animation = "spin-tura 3s forwards";
         }, 100);
         tura++;
-    } else {
+    }
+    else{
+        //eğer tura geldiyse 100 mlsaniyr sonra coine spin-yazi animasyonunu uygula
         setTimeout(() => {
             coin.style.animation = "spin-yazi 3s forwards";
         }, 100);

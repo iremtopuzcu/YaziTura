@@ -1,42 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- HTML belgesinin sürümünü ve türünü belirtir. -->
+
+<html lang="en"> <!-- HTML belgesinin başlangıcı ve dilini tanımlar. -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Belge karakter setini UTF-8 olarak ayarlar. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Cihazın genişliğine göre uyumlu ölçeklendirme yapar. -->
+    <title>Document</title> <!-- Sayfa başlığını belirtir. -->
+
+    <link rel="stylesheet" href="style.css"> <!-- Stil dosyasını belgeye bağlar. -->
+
 </head>
+
 <body>
-    <div class="container">
+    <div class="container"> <!-- Bir konteyner divi oluşturur. -->
 
         <div class="stats">
-            <p id="tura-count">Tura: 0</p>
-            <p id="yazi-count">Yazı: 0</p>
+            <p id="tura-count">Tura: 0</p> <!-- Tura sayısını gösteren bir paragraf (ilk değeri 0). -->
+            <p id="yazi-count">Yazı: 0</p> <!-- Yazı sayısını gösteren bir paragraf (ilk değeri 0). -->
         </div>
 
-        <div id="coin" class="coin">
+        <div id="coin" class="coin"> <!-- "coin" ID'sine ve "coin" sınıfına sahip bir div oluşturur. -->
 
             <div class="tura">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/1TL_reverse.png" alt="">
+                <!-- Tura resmini içeren bir div (Tura resminin URL'si belirtilmiş). -->
             </div>
 
             <div class="yazi">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/1TL_obverse.png" alt="">
+                <!-- Yazı resmini içeren bir div (Yazı resminin URL'si belirtilmiş). -->
             </div>
-
-            
 
         </div>
 
         <div class="buttons">
-
-            <button id="flip-button">Döndür</button>
-
-            <button id="reset-button">Sıfırla</button>
+            <button id="flip-button">Döndür</button> <!-- "Döndür" butonunu oluşturur. -->
+            <button id="reset-button">Sıfırla</button> <!-- "Sıfırla" butonunu oluşturur. -->
         </div>
+
     </div>
 
-    
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- JavaScript dosyasını belgeye bağlar. -->
+
 </body>
+
 </html>
